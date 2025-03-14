@@ -1,0 +1,51 @@
+@import "tailwindcss";
+:root {
+  --primary: #ff6257;
+  --custom-blue800: hsl(234, 29%, 20%);
+  --custom-blue700: hsl(235, 18%, 26%);
+  --custom-grey: hsl(0, 0%, 58%);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+button {
+  position: relative;
+  overflow: hidden;
+  background: var(--custom-blue800);
+  border: none;
+  color: white;
+  z-index: 0;
+}
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--primary), #ff9044);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+button:hover::after {
+  opacity: 1;
+}
+.valid {
+  background-color: white;
+  color: black;
+  border-color: #99a1af;
+}
+.invalid {
+  background-color: #ffdcdc !important;
+  color: var(--primary) !important;
+  border-color: var(--primary);
+}
+#validationMsg {
+  position: absolute;
+  display: none;
+  top: 0px;
+  right: 0;
+  color: var(--primary);
+  font-size: 12px;
+}
