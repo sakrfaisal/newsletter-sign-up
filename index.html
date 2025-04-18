@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <!-- displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Responsive Frontend Mentor newsletter sign-up form featuring engaging illustrations, email validation, and a success message. Join 60,000+ product managers receiving monthly updates on product discovery and growth strategies." />
     <!-- Page Icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <!-- Mian Css File -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- Google Fonts -->
@@ -18,79 +18,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   </head>
   <body>
     <main
-      class="grid place-items-center min-h-screen bg-[var(--custom-blue800)] text-lg sm:text-base"
-    >
+      class="grid place-items-center min-h-screen bg-[var(--custom-blue800)] text-lg sm:text-base">
       <div
         id="subscribe-content"
-        class="subscribe-content flex flex-col sm:flex-row-reverse w-full sm:w-fit h-full sm:h-fit sm:rounded-3xl bg-white"
-      >
+        class="subscribe-content flex flex-col sm:flex-row-reverse w-full sm:w-fit h-full sm:h-fit sm:rounded-3xl bg-white">
         <div class="-mt-4 sm:mt-0 sm:py-6 sm:pr-6 sm:w-83">
           <picture>
-            <source
-              srcset="images/illustration-sign-up-mobile.svg"
-              media="(max-width: 639px)"
-            />
+            <source srcset="images/illustration-sign-up-mobile.svg" media="(max-width: 639px)" />
             <img
               src="images/illustration-sign-up-desktop.svg"
               alt="Devices"
-              class="w-full h-full rounded-[15px] object-cover"
-            />
+              class="w-full h-full rounded-[15px] object-cover" />
           </picture>
         </div>
         <div
-          class="content sm:max-w-100 md:max-w-109s sm:text-sm md:text-base flex flex-col justify-center px-6 py-8 sm:p-10 gap-6 text-[var(--custom-blue800)]"
-        >
+          class="content sm:max-w-100 md:max-w-109s sm:text-sm md:text-base flex flex-col justify-center px-6 py-8 sm:p-10 gap-6 text-[var(--custom-blue800)]">
           <h1 class="text-[3.25rem] font-bold -mb-3">Stay updated!</h1>
           <p class="font-medium">
             Join 60,000+ product managers receiving monthly <wbr />updates on:
           </p>
           <ul class="flex flex-col gap-3 mb-2">
             <li class="flex gap-3 items-centers">
-              <img
-                src="images/icon-success.svg"
-                alt="Check"
-                width="20px"
-              />Product discovery and building what matters
+              <img src="images/icon-success.svg" alt="Check" width="20px" />Product discovery and
+              building what matters
             </li>
             <li class="flex gap-3 items-centers">
-              <img
-                src="images/icon-success.svg"
-                alt="Check"
-                width="20px"
-              />Measuring to ensure updates are a success
+              <img src="images/icon-success.svg" alt="Check" width="20px" />Measuring to ensure
+              updates are a success
             </li>
             <li class="flex gap-3 items-centers">
-              <img src="images/icon-success.svg" alt="Check" width="20px" />And
-              much more!
+              <img src="images/icon-success.svg" alt="Check" width="20px" />And much more!
             </li>
           </ul>
           <form action="" class="flex flex-col gap-5">
             <div class="relative">
-              <label for="email" class="block mb-1 text-xs font-semibold"
-                >Email address</label
-              >
+              <label for="email" class="block mb-1 text-xs font-semibold">Email address</label>
               <input
                 type="text"
                 id="email"
                 name="email"
                 placeholder="email@company.com"
-                class="valid relative w-full px-6 py-3 outline-none rounded-md border-1"
-              />
+                class="valid relative w-full px-6 py-3 outline-none rounded-md border-1" />
               <span id="validationMsg">valid email required</span>
             </div>
             <button
               type="submit"
-              class="px-6 py-3 outline-none rounded-md bg-[var(--custom-blue800)] text-white"
-            >
+              class="px-6 py-3 outline-none rounded-md bg-[var(--custom-blue800)] text-white">
               Subscribe to monthly newsletter
             </button>
           </form>
@@ -98,27 +77,18 @@
       </div>
       <div
         id="success-message"
-        class="hidden h-full sm:h-fit p-10 sm:max-w-110 flex-col justify-center px-6 py-8 sm:p-12 gap-6 text-[var(--custom-blue800)] bg-white sm:rounded-3xl"
-      >
+        class="hidden h-full sm:h-fit p-10 sm:max-w-110 flex-col justify-center px-6 py-8 sm:p-12 gap-6 text-[var(--custom-blue800)] bg-white sm:rounded-3xl">
         <div class="text mt-[50%] sm:mt-0">
-          <img
-            src="images/icon-success.svg"
-            alt="Check"
-            width="50px"
-            class="block mb-4"
-          />
-          <h1 class="text-[2rem] font-bold mb-4 leading-none">
-            Thanks for subscribing!
-          </h1>
+          <img src="images/icon-success.svg" alt="Check" width="50px" class="block mb-4" />
+          <h1 class="text-[2rem] font-bold mb-4 leading-none">Thanks for subscribing!</h1>
           <p class="mb-6">
             A confirmation email has been sent to
-            <strong>ash@loremcompany.com</strong>. Please open it and click the
-            button inside to confirm your subscription.
+            <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to
+            confirm your subscription.
           </p>
         </div>
         <button
-          class="w-full px-6 py-3 outline-none rounded-md bg-[var(--custom-blue800)] text-white mt-auto mb-6 sm:mb-0"
-        >
+          class="w-full px-6 py-3 outline-none rounded-md bg-[var(--custom-blue800)] text-white mt-auto mb-6 sm:mb-0">
           Dismiss message
         </button>
       </div>
